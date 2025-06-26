@@ -44,7 +44,7 @@
     "typescript": "^5.0.0"
   },
   "repository": {
-    "type": "git",
-    "url": "https://github.com/yourusername/utils_self.git"
+  "type": "git",
+  "url": "https://github.com/zkd-11/ts_utils_self.git"
   }
 }
