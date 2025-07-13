@@ -31,6 +31,13 @@ export function isOdd(num: number): boolean {
 }
 
 /**
+ * Check if number is Zero
+ */
+export function isZero(num: number): boolean {
+  return num === 0;
+}
+
+/**
  * Clamp number between min and max
  */
 export function clamp(num: number, min: number, max: number): number {

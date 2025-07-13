@@ -1,4 +1,4 @@
-import { unique, chunk, flatten, randomElement, shuffle } from '../src/array';
+import { unique, chunk, flatten, randomElement, shuffle, intersection } from '../src/array';
 
 describe('Array Utils', () => {
   describe('unique', () => {
@@ -78,4 +78,8 @@ describe('Array Utils', () => {
       expect(arr).toEqual(original);
     });
   });
+
+  test('intersection', () => {
+    expect(intersection([1, 2, 3], [2, 3, 4])).toEqual([2, 3]);
+  })
 });

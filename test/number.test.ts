@@ -1,4 +1,4 @@
-import { randomBetween, roundTo, isEven, isOdd, clamp, toPercentage } from '../src/number';
+import { randomBetween, roundTo, isEven, isOdd, clamp, toPercentage, isZero } from '../src/number';
 
 describe('Number Utils', () => {
   describe('randomBetween', () => {
@@ -51,6 +51,13 @@ describe('Number Utils', () => {
       expect(isOdd(0)).toBe(false);
     });
   });
+
+  describe('isZero', () => {
+    test('should return true for zero', () => {
+      // expect(isZero(1)).not.toBe(true);
+      expect(isZero(0)).toBe(true);
+    });
+  })
 
   describe('clamp', () => {
     test('should clamp number within range', () => {
